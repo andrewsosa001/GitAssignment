@@ -1,0 +1,29 @@
+(a) How many commits have been done to the repository by the end of step 8? (5 points)
+3 new commits by me.
+
+(b) When was the file .gitignore modified last? (5 points)
+I updated it at 11:30 on Sept 20th to ignore my .idea/ folder.
+
+(c) How many times was each of the files inside the src folder modified? (5 points)
+BasicWeapon.java was added and has not been modifications.
+Rolegame.java was added and has not been modifications.
+Sword.java was added and then modified once.
+Weapon.java was added and has not been modifications.
+WeaponFactory.java was added and has not been modifications.
+
+(d) What is the difference between git log and git status? (5 points)
+Git log shows the previous commits with their messages. Git status only
+shows the current files with pending changes, or files which have not
+been added to the version control system.
+
+(e) What command would you use to see the commits where “RoleGame.java”
+was one of the commited files? (5 points)
+git log --follow src/edu/fsu/cs/cen5035/RoleGame.java
+
+(f) What command would you use to see the commits whose commit message
+contains the word “file”? (5 points)
+git log --grep='file'
+
+(g) What command would you use to see the commits made by “Alice” between
+09/01/2016 and 09/16/2016? (5 points)
+git log --author='Alice' --since='09/01/2016' --until='09/16/2016'
